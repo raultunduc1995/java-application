@@ -1,0 +1,7 @@
+plugins {
+    id 'com.example.java-application'
+}
+
+application {
+    mainClass = "com.example.javaapplication.JavaApplication"
+}

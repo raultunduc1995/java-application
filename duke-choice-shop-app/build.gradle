@@ -1,0 +1,16 @@
+plugins {
+    id 'com.example.java-application'
+}
+
+application {
+    mainClass = "duke.choice.App"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+    implementation 'org.jetbrains:annotations:23.0.0'
+}
+
+repositories {
+    mavenCentral()
+}

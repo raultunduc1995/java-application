@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories.gradlePluginPortal()
+}
+dependencyResolutionManagement {
+    repositories.mavenCentral()
+}
+rootProject.name = 'java-application'
+include('toy-store-app', 'duke-choice-shop-app')
