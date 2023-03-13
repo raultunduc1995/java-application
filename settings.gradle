@@ -6,3 +6,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = 'java-application'
 include('toy-store-app', 'duke-choice-shop-app', 'hr-app')
+include 'java-language-specs'
+
