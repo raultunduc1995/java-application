@@ -1,25 +1,28 @@
 package com.example.javaapplication.model;
 
-public final class Dog {
-    public static void executeCompanionMethod() {
-    }
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
+public final class Dog {
     private final String name;
     private final float weight;
     private Toy toy;
 
-    public Dog(String name, float weight, Toy toy) {
+    public Dog(@NotNull final String name, final float weight, @NotNull final Toy toy) {
         this.name = name;
         this.weight = weight;
         this.toy = toy;
     }
 
-    public Dog(String name, float weight) {
+    public Dog(@NotNull final String name, final float weight) {
         this.name = name;
         this.weight = weight;
     }
 
-    public String getName() {
+    public static void executeCompanionMethod() {
+    }
+
+    public @NotNull String getName() {
         return name;
     }
 
@@ -27,12 +30,13 @@ public final class Dog {
         return weight;
     }
 
-    public Toy getToy() {
+    public @NotNull Toy getToy() {
         return toy;
     }
 
+    @Contract(pure = true)
     @Override
-    public String toString() {
+    public @NotNull String toString() {
         return "Dog{" +
                 "name='" + name + '\'' +
                 ", weight=" + weight +
