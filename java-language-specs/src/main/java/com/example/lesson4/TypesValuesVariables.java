@@ -1,4 +1,4 @@
-package com.example.four;
+package com.example.lesson4;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -140,7 +140,7 @@ public final class TypesValuesVariables {
     private static void testReflection() {
         TypesValuesVariables variable;
         try {
-            variable = (TypesValuesVariables) Class.forName("com.example.four.TypesValuesVariables").getDeclaredConstructor().newInstance();
+            variable = (TypesValuesVariables) Class.forName("com.example.lesson4.TypesValuesVariables").getDeclaredConstructor().newInstance();
             System.out.println(variable.getClass().getName());
         } catch (final ClassNotFoundException | InvocationTargetException | InstantiationException |
                        IllegalAccessException |

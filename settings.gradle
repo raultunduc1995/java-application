@@ -5,6 +5,11 @@ dependencyResolutionManagement {
     repositories.mavenCentral()
 }
 rootProject.name = 'java-application'
-include('toy-store-app', 'duke-choice-shop-app', 'hr-app')
-include 'java-language-specs'
-
+include(
+        'toy-store-app',
+        'duke-choice-shop-app',
+        'hr-app',
+        'java-language-specs',
+        'java-dev-tutorials',
+        'oop-udacity'
+)

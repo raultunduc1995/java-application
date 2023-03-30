@@ -1,5 +1,5 @@
 plugins {
-    id 'com.example.java-application'
+    id 'java-application-conventions'
 }
 application {
     mainClass = "com.example.hrapp.HrApp"

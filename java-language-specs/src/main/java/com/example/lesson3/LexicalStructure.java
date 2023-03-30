@@ -1,4 +1,4 @@
-package com.example.three;
+package com.example.lesson3;
 
 public class LexicalStructure {
     public static void main(String[] args) {

@@ -1,0 +1,21 @@
+plugins {
+    id 'java-conventions'
+    id 'application'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += "--enable-preview"
+    options.warnings = true
+}
+
+tasks.withType(Test).configureEach {
+    jvmArgs += "--enable-preview"
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += "--enable-preview"
+    jvmArgs += "-XX:+UseZGC"
+    jvmArgs += "-Xmx4G"
+    jvmArgs += "-Xlog:gc"
+}
