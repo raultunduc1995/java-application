@@ -11,5 +11,6 @@ include(
         'hr-app',
         'java-language-specs',
         'java-dev-tutorials',
-        'oop-udacity'
+        'oop-udacity',
+        'code-cademy'
 )
